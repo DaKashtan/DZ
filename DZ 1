@@ -1,0 +1,73 @@
+#Проверка на четность
+s=int(input('Введите число  '))
+if s % 2 == 0:
+    print('Чётное')
+else:
+    print('Нечётное')
+
+#Вывод суммы двух чисел
+A=int(input('Введите первое число  '))
+B=int(input('Введите второе число  '))
+print(A+B)
+
+#Вывод максимального простого числа меньше заданного
+n = int(input('Введите число  '))
+a=n-1
+k=0
+while a>=0:
+    for i in range(2, a//2+1):
+        if a%i==0:
+            k=k+1
+    if k==0:
+        print(a)
+        break
+    else:
+        k=0
+        a=a-1
+
+#Вывод простых делителей числа
+n = int(input('Введите число  '))
+a=2
+while n>=1:
+    if n%a==0:
+        print(a)
+        n=n/a
+    else:
+        a=a+1
+
+#Последовательность Фибоначчи заданная двумя простыми числами:
+n = int(input('Введите число  '))
+k=0
+while n>=0:
+    for i in range(2, n//2+1):
+        if n%i==0:
+            k=k+1
+    if k==0:
+        a=n
+        print(a)
+        break
+    else:
+        k=0
+        n=n-1
+A=a
+a=a-1
+k=0
+while a>=0:
+    for i in range(2, a//2+1):
+        if a%i==0:
+            k=k+1
+    if k==0:
+        b=a
+        print(b)
+        break
+    else:
+        k=0
+        a=a-1
+for i in range(b, A+1):
+     b=b+i
+     print(b)
+
+
+
+
+
