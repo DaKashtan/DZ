@@ -4,9 +4,9 @@ class Sequence:
         self.name = name
         self.seq = seq
     def name ( self ) :
-        return name
+        return self.name
     def seq ( self ) :
-        return seq
+        return self.seq
     def length (self) :
         length=len(seq)
         return lenght
