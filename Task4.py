@@ -29,7 +29,7 @@ class DNA(Sequence):
             if self.seq[i]=='A':
                 comp.append('T')
             elif self.seq[i]=='T':
-                comp.append('T')
+                comp.append('A')
             elif self.seq[i]=='G':
                 comp.append('C')
             elif self.seq[i]=='C':
