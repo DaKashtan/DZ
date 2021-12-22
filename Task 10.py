@@ -1,7 +1,6 @@
 def alph():
   A = input('Задайте алфавит - ').split()
-  seq = input('Введите последовательность - ')
-  def statistic():
+  def statistic(self):
     for i in range(len(seq)):
-      G = seq.count(A[i])
-      print(A[i], G)
+      stat = self.seq.count(self.alphabet[i])
+      print(alphabet[i],' - ',stat))
