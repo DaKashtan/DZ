@@ -21,7 +21,7 @@ class DNA(Sequence):
             stat = self.seq.count(self.alphabet[i])
             print(alphabet[i],' - ',stat)
     def Mol(self):
-        m=347 * self.seq.count(self.alphabet[0]) + 320.2 * self.seq.count(self.alphabet[1]) + 363.2 * self.seq.count(self.alphabet[2]) + 323.2 * self.seq.count(self.alphabet[3])
+        m=135.13 * self.seq.count(self.alphabet[0]) + 111.1 * self.seq.count(self.alphabet[1]) + 151.13 * self.seq.count(self.alphabet[2]) + 126.11 * self.seq.count(self.alphabet[3])
         print('Молекулярная масса - ',round(m,2))
     def Complementary(self):
         comp=[]
@@ -58,7 +58,7 @@ class RNA(Sequence):
             stat = self.seq.count(alphabet[i])
             print(alphabet[i],' - ',stat)
     def Mol(self):
-        m=347 * self.seq.count(self.alphabet[0]) + 324.2 * self.seq.count(self.alphabet[1]) + 363.2 * self.seq.count(self.alphabet[2]) + 323.2 * self.seq.count(self.alphabet[3])
+        m=135.13 * self.seq.count(self.alphabet[0]) + 111.1 * self.seq.count(self.alphabet[1]) + 151.13 * self.seq.count(self.alphabet[2]) + 112.09 * self.seq.count(self.alphabet[3])
         print('Молекулярная масса - ', round(m,2))
     def Translation(self):
          d= {'UUU': 'F', 'UUC': 'F','UUA':'L','UUG':'L','CUU':'L',
@@ -88,7 +88,7 @@ class RNA(Sequence):
         print('Белок  - ', protein)
 class Protein(Sequence):
     name = 'Protein'
-    alphabet = ['G', 'L', 'Y', 'S','E', 'Q', 'D', 'N','F', 'A', 'K', 'R', 'H', 'C', 'V', 'P','W', 'I', 'M','T']
+    alphabet = ['G', 'L', 'Y', 'S','E', 'Q', 'D', 'N','F', 'A', 'K', 'R', 'H', 'C', 'V', 'P','W', 'I', 'M','T'] 
     def __init__(self,seq,):
         super().__init__(Sequence,seq)
     def statistic(self):
@@ -97,9 +97,9 @@ class Protein(Sequence):
             print(alphabet[i],' - ',stat)
 
     def Mol(self):
-        m=75 * self.seq.count(self.alphabet[0]) + 89 * self.seq.count(self.alphabet[1]) + 117.2 * self.seq.count(self.alphabet[2]) + 131.2 * self.seq.count(self.alphabet[3]) + \
-        131.2 * self.seq.count(self.alphabet[4]) + 149.2 * self.seq.count(self.alphabet[5]) + 115.1 * self.seq.count(self.alphabet[6]) + 165.2 * self.seq.count(self.alphabet[7]) + \
-        204.2 * self.seq.count(self.alphabet[8]) + 105.9 * self.seq.count(self.alphabet[9]) + 119 * self.seq.count(self.alphabet[10]) + 132 * self.seq.count(self.alphabet[11]) + \
-        146 * self.seq.count(self.alphabet[12]) + 181.2 * self.seq.count(self.alphabet[13]) + 121.2 * self.seq.count(self.alphabet[14]) + 146.2 * self.seq.count(self.alphabet[15]) + \
-        174.2 * self.seq.count(self.alphabet[16]) + 155.2 * self.seq.count(self.alphabet[17]) + 131 * self.seq.count(self.alphabet[18]) + 147 * self.seq.count(self.alphabet[19])
+        m=75 * self.seq.count(self.alphabet[0]) + 131* self.seq.count(self.alphabet[1]) + 181. * self.seq.count(self.alphabet[2]) + 105 * self.seq.count(self.alphabet[3]) + \
+        147 * self.seq.count(self.alphabet[4]) + 146 * self.seq.count(self.alphabet[5]) + 133 * self.seq.count(self.alphabet[6]) + 132 * self.seq.count(self.alphabet[7]) + \
+        165 * self.seq.count(self.alphabet[8]) + 89 * self.seq.count(self.alphabet[9]) + 146 * self.seq.count(self.alphabet[10]) + 174 * self.seq.count(self.alphabet[11]) + \
+        155 * self.seq.count(self.alphabet[12]) + 121 * self.seq.count(self.alphabet[13]) + 117 * self.seq.count(self.alphabet[14]) + 115 * self.seq.count(self.alphabet[15]) + \
+        204 * self.seq.count(self.alphabet[16]) + 131 * self.seq.count(self.alphabet[17]) + 149 * self.seq.count(self.alphabet[18]) + 119 * self.seq.count(self.alphabet[19])
         print('Молекулярная масса - ', round(m,2))
