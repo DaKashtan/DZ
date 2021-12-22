@@ -23,3 +23,4 @@ def sortchange(M):
         M[n + 1] = g
         c[n+1]=j
     print(M)
+sortchange(M)    
