@@ -1,6 +1,6 @@
 #Классы
 class Sequence:
-    def __unit__(self, name, seq):
+    def __init__(self, name, seq):
         self.name = name
         self.seq = seq
     def name ( self ) :
@@ -9,13 +9,13 @@ class Sequence:
         return self.seq
     def length (self) :
         length=len(seq)
-        return lenght
+        return length
 class DNA(Sequence):
     name='DNA'
     alphabet=['A','C','G','T']
 
-    def __unit__(self,seq,):
-        super().__unit__(Sequence,seq)
+    def __init__(self,seq,):
+        super().__init__(Sequence,seq)
     def statistic(self):
         for i in range(0,4):
             stat = self.seq.count(self.alphabet[i])
@@ -51,8 +51,8 @@ class DNA(Sequence):
 class RNA(Sequence):
     name = 'RNA'
     alphabet = ['A', 'C', 'G', 'U']
-    def __unit__(self,seq,):
-        super().__unit__(Sequence,seq)
+    def __init__(self,seq,):
+        super().__init__(Sequence,seq)
     def statistic(self):
         for i in range(0,4):
             stat = self.seq.count(alphabet[i])
@@ -89,8 +89,8 @@ class RNA(Sequence):
 class Protein(Sequence):
     name = 'Protein'
     alphabet = ['G', 'L', 'Y', 'S','E', 'Q', 'D', 'N','F', 'A', 'K', 'R', 'H', 'C', 'V', 'P','W', 'I', 'M','T']
-    def __unit__(self,seq,):
-        super().__unit__(Sequence,seq)
+    def __init__(self,seq,):
+        super().__init__(Sequence,seq)
     def statistic(self):
         for i in range(0,20):
             stat = self.seq.count(alphabet[i])
