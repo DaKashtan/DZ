@@ -40,14 +40,14 @@ class DNA(Sequence):
         transcr = []
         for i in range(0, len(self.seq)):
             if self.seq[i] == 'A':
-                comp.append('U')
+                transcr.append('U')
             elif self.seq[i] == 'T':
-                comp.append('A')
+                transcr.append('A')
             elif self.seq[i] == 'G':
-                comp.append('C')
+                transcr.append('C')
             elif self.seq[i] == 'C':
-                comp.append('G')
-        print('Комплементарная последовательность  - ', comp)
+                transcr.append('G')
+        print('Транскрипция - ', transcr)
 class RNA(Sequence):
     name = 'RNA'
     alphabet = ['A', 'C', 'G', 'U']
