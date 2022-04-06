@@ -1,0 +1,26 @@
+import re
+
+sites = ['GAATTC', 'AAGCTT', 'GTTAAC', 'GGCC', 'GATATC', 'ATGGAT']
+print(sites)
+vector_sequence = input()
+good_sites = []
+for i in sites:
+  if i in vector_sequence:
+  good_sites.append(i) #добавляем в список гуд_сайтс сайты, которые есть в векторе
+sum_inclusions=[]
+for i in good_sites:
+    inclusions=re.findall(i,vector_sequence)
+    sum_inclusions.append(len(inclusions)) #Подсчет количества включений "хороших" сайтов
+    inclusions=[]
+ind=sum_inclusions.index(min(sum_inclusions))
+site_restr=good_sites[ind] #Находим сайт рестрикции
+
+a, b = vector_sequence.split(site_restr)
+result = a+site_restr+new_insert_sequence+site_restr + b
+print(result)
+
+# вывод манипуляций
+print('1. Проведение ПЦР... сайт рестрикции', site_restr)
+print('2. Обработка рестриктазой...')
+print('3. Лигирование...')
+print('4. Конечный результат...', result)
